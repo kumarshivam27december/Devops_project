@@ -1,0 +1,384 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #324e63;
+  background: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::-webkit-file-upload-button { 
+  cursor:pointer; 
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #1f3a5f; /* Dark navy blue - more elegant and stands out */
+  border-bottom: 1px solid #1f3a5f; /* Slight border for definition */
+  position: relative;
+}
+
+.nav-link {
+  color: #ffffff; /* White text for contrast on dark background */
+}
+
+.nav-link h1 {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #f1f1f1; /* Light text for brand/title */
+  margin-left: 0.5rem;
+}
+
+.nav-item {
+  float: right;
+}
+
+
+
+/* Add Book Form */
+div.container {
+  padding: 0 8rem;
+  display: relative;
+}
+
+.form-wrapper {
+  margin: 50px 0;
+  padding: 4rem;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+}
+
+.form-input {
+  margin: 0 20px;
+}
+
+.submit-form-btn-wrapper {
+  text-align: center;
+}
+
+.submit-form-btn {
+  margin-top: 3rem;
+}
+
+.preview-image-wrapper {
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.preview-image-wrapper img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* Card */
+.card-deck {
+  justify-content: left;
+  padding-bottom: 50px;
+}
+
+.card {
+  width: 15rem;
+  padding: 7.5px 15px 7.5px 15px;
+  margin: 1.3rem;
+  transition: box-shadow 0.3s;
+  border: 0 !important;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.card-img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.25rem 0 0 0 !important;
+}
+
+.card-title.h5, .card-subtitle.h6, .card-text {
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Search bar */
+.form-row {
+  width: 100%;
+}
+
+.form-group {
+  margin-top: 2.5rem;
+}
+
+.form-control.search-bar {
+  margin: 2rem 0 1rem 0;
+}
+
+.form-control.search-bar {
+  width: 50% !important;
+  display: inline-block;
+}
+
+.form-control.filter {
+  width: 15% !important;
+  display: inline-block;
+}
+
+.no-results {
+  margin: 50px auto 0 auto;
+}
+
+/* Book Info */
+.bookinfo-wrapper {
+  margin: 4rem 2rem;
+  padding: 3rem;
+  border: 1px solid rgba(128, 128, 128, .3);
+  border-radius: 1rem;
+}
+
+.bookinfo-image-wrapper {
+  text-align: center;
+}
+
+.bookinfo-image-wrapper img {
+  width: 15rem;
+}
+
+.book-des {
+  white-space: pre-wrap;
+}
+
+.read-more { /* Make button look like a link */
+  background: none;
+  border: none;
+  padding: 0;
+  color: #069;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  color: #0000EE;
+}
+
+.icon {
+  cursor: pointer;
+  margin: 1rem 1rem 0 1rem;
+  color: #000;
+}
+
+.icon:hover {
+  color: #f50057;
+}
+
+.book-owner-wrapper {
+  margin-bottom: 0.2rem;
+}
+
+/* Error 404 */
+.page-not-found {
+  margin: 10rem;
+  text-align: center;
+}
+
+/* Login and Register */
+.link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0.3rem 2rem 0 0;
+}
+
+.link-btn:focus {
+  outline: none;
+}
+
+.link-btn a {
+  color: #6944ff;
+}
+
+.link-btn a:hover {
+  color: #6944ff;
+  text-decoration: none;
+}
+
+.form-btn-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.user-form-wrapper {
+  width: 70%;
+  padding: 3rem;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+}
+
+.form-group {
+  padding-top: 0.5rem;
+  margin-top: 0;
+  position: relative;
+}
+
+.user-form-input {
+  border: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.user-form-input:focus {
+  box-shadow: none !important;
+}
+
+.form-control {
+  margin-top: 1rem;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 32px;
+  left: 12px;
+  font-size: 1rem;
+  opacity: 0.8;
+  transition: 0.2s ease all;
+}
+
+.user-form-input:focus ~ .floating-label,
+.form-control:not(:focus):not(:placeholder-shown) ~ .floating-label {
+  opacity: 1;
+  margin-top: -2rem;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.small-link {
+  color: #28a745;
+  cursor: pointer;
+}
+
+.small-link:hover {
+  color: #218838;
+  text-decoration: none;
+}
+
+.user-form-btn {
+  width: 30%;
+}
+
+.error-message {
+  color: #FF0000;
+  font-size: 0.8rem;
+}
+
+/* Profile button */
+.profile-dropdown .btn-primary {
+  background-color: #fff;
+  margin-right: 1rem;
+  padding: 0;
+  border: none;
+}
+
+.profile-dropdown .btn-primary:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.profile-dropdown .btn-primary:focus {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.profile-dropdown .btn-primary:not(:disabled):not(.disabled).active,
+.profile-dropdown .btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: none !important;
+}
+
+.drop-down {
+  position: absolute;
+}
+
+.profile-dropdown a {
+  color: inherit;
+}
+
+/* Profile section */
+.profile-section {
+  margin-top: 3rem;
+}
+
+.profile-name {
+  display: inline-block;
+  color: #6944ff;
+}
+
+.profile-img-wrapper {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-stats{
+  font-size: 1rem;
+  color: #324e63;
+}
+
+.edit-profile-btn {
+  margin-top: 0.5rem;
+}
+
+.user-profile-field {
+  margin-top: 1rem;
+}
+
+.form-control .user-profile-input {
+  outline: none;
+  box-shadow: none;
+}
+
+.user-profile-form {
+  width: 80%;
+  margin: 5rem auto;
+  padding: 3rem;
+  border: 1px solid rgba(128, 128, 128, .3);
+  border-radius: 1rem;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.profile-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.profile-submit-btn {
+  margin: 2rem 0 0 5rem;
+}
+
+.max-length-tooltip {
+  position: absolute;
+  color: #FF6347;
+}
