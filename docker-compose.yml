@@ -32,3 +32,12 @@ services:
     restart: unless-stopped
 
 
+#updating the docker-compose file to include the frontend and backend services
+# The backend service is built from the Dockerfile in the ./backend directory
+# The frontend service is built from the Dockerfile in the ./client directory
+# The backend service exposes port 4000 and the frontend service exposes port 3000
+# The backend service uses the MONGO_URI and SECRET environment variables
+# The frontend service uses the NODE_OPTIONS environment variable
+# The volumes for both services are mounted to allow for live reloading
+# The backend service is set to restart unless stopped
+# The frontend service is set to depend on the backend service
