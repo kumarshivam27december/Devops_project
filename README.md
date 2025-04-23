@@ -1,96 +1,52 @@
-# 2ndBook
+# Bookstagram
 
-A book sharing web app built with the MERN (MondoDB, Express, React, Node) stack!
+Welcome to **Bookstagram**, a platform for book lovers to share and discover amazing books.
 
-## Project Demo
-I have uploaded a 2 min app demo on [Youtube](https://www.youtube.com/watch?v=sNkqTQHeZ2U&feature=youtu.be).
+## Features
+- Share your favorite books with the community.
+- Discover new books based on recommendations.
+- Engage with other book enthusiasts.
 
-## Getting started
+## Installation
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/your-username/Bookstagram.git
+  ```
+2. Navigate to the project directory:
+  ```bash
+  cd Bookstagram
+  ```
+3. Install dependencies:
+  ```bash
+  npm install
+  ```
 
-### Clone the repo
-`git clone https://github.com/jseow5177/Bookstagram.git`</br>
-`cd Bookstagram`
+## Usage
+Start the development server:
+```bash
+npm start
+```
+Access the app at `http://localhost:3000`.
 
-## File Structure
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch:
+  ```bash
+  git checkout -b feature-name
+  ```
+3. Commit your changes:
+  ```bash
+  git commit -m "Add feature-name"
+  ```
+4. Push to your branch:
+  ```bash
+  git push origin feature-name
+  ```
+5. Open a pull request.
 
-#### `client` - Holds the client application
-- #### `public` - Holds the static files
-- #### `src`
-    - #### `components` - Holds all the different React components
-    - #### `App.js` - Renders browser routes and different pages
-    - #### `index.js` - Renders the React app by rendering App.js
-- #### `package.json` - Defines npm behaviors and packages for the client
-#### `backend` - Holds the server application
-- #### `database` - Holds `db.js` which has the local mongoDB connection
-- #### `models` - Holds all the data models
-- #### `routes` - Holds HTTP to URL path associations for each unique url
-- #### `uploads` - Multer file uploads
-- #### `server.js` - Holds the server code
-- #### `package.json` - Defines npm behaviors and packages for the server
-#### `package.json` - Defines npm behaviors like the scripts defined in the next section of the README
-#### `.gitignore` - Tells git which files to ignore
-#### `README` - This file!
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-## Available Scripts
-
-Please note that any time the server is run in these scripts `nodemon` is used in place of `node` for easier development.<br/>
-In the root directory, you can run:
-
-### `npm run install-all`
-
-Installs all `npm` dependencies in the client and server side.
-
-### `npm run client-install`
-
-Installs all `npm` dependencies in the client side.
-
-### `npm run server-install`
-
-Installs all `npm` dependencies in the server side.
-
-### `npm run client`
-
-Runs just the client app in development mode. <br />
-Open [http://localhost:3000](http://localhost:3000) to view the client in the browser.
-
-### `npm run server`
-
-Runs just the server in development mode.
-
-### `npm run dev`
-
-Runs both the client and server in development mode. <br />
-Open [http://localhost:3000](http://localhost:3000) to view the client in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-## Tech Stacks
-<ul>
-  <li>Backend
-    <ul>
-      <li>Node.js</li>
-      <li>Express.js</li>
-      <li>MongoDB and Mongoose</li>
-    </ul>
-  </li>
-  <li>Frontend
-    <ul>
-      <li>HTML5, CSS3, JavaScript</li>
-      <li>React</li>
-      <li>React Bootstrap</li>
-      <li>Redux</li>
-    </ul>
-  </li>
-</ul>
-
-## App features
-<ol>
-  <li>User login, signup and authentication with JSON web token (JWT).</li>
-  <li>Users can upload, edit, delete and view books.</li>
-  <li>Users can edit their own profile page and view the profile of others.</li>
-</ol>
-
-## Next steps
-- Implement a chat feature that allows user to talk to each other via web sockets
-- Improve API endpoints
+## Contact
+For any questions or feedback, feel free to reach out at `your-email@example.com`.
