@@ -59,6 +59,7 @@ pipeline {
         // 2. Build containers
         stage('Build Containers') {
             steps {
+                sh 'docker-compose down || true' // Ensure no old containers are running
                 sh 'docker-compose build'
             }
         }
