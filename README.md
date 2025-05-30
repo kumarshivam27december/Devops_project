@@ -31,7 +31,7 @@ Bookstagram is a full-stack book-sharing platform built with the MERN stack (Mon
 
 ## Project Structure
 
-
+````
 
 Bookstagram/
 │
